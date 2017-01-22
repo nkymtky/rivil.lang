@@ -1,0 +1,30 @@
+﻿@charset "utf-8";
+@font-face {
+    font-family: "RivilGothicWeb";
+    src: url("font/RivilGothic/0.01/RivilGothic.woff") format("Woff");
+}
+body {
+	font-family: "Times New Roman", Serif;
+	padding: 0px 24px 24px 24px;
+	line-height: 1;
+	background-color: #f9f9f2;
+}
+h1 {
+	margin: 24px 0px 24px 0px;
+	padding: 0px;
+	font-size: 32px;
+	padding: 8px 12px;
+	background-color: #f0f0ea;
+}
+p {
+	margin: 12px;
+	padding: 0px;
+  line-height: 1.5em;
+}
+.rivil {
+	font-size: 32px;
+	font-weight: normal;
+}
+.gothic {
+	font-family: "RivilGothicWeb";
+}

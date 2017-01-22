@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="converter.css">
+	<title>Rivil Converter</title>
+	<script src="converter/0.01/rivil.lang.js"></script>
+	<script src="converter.js"></script>
+</head>
+<body>
+
+	<div class="container">
+		<h3>English</h3>
+		<form name="form1">
+			<textarea name="textarea1" class="latin" title="Input Words" cols="4"
+			          onchange="cv();" onkeyup="cv();"></textarea>
+		</form>
+	</div>
+
+	<div class="container">
+		<h3>Rivil</h3>
+		<div id="result1" class="rivil"></div>
+	</div>
+
+</body>
+</html>
