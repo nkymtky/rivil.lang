@@ -192,6 +192,12 @@ global.rivil.lang = ( function ()
 					head = false;
 				}
 			}
+			// 同じ文字が3つ以上連続する場合は2つに収める
+			if (/(.)\1{2,}/.test(ret.rivil)) {
+				// console.log(ret.rivil);
+				ret.rivil = ret.rivil.replace(/(.)\1{2,}/g, "$1$1");
+				// console.log(ret.rivil);
+			}
 		}
 		// 英字列以外 → そのまま返す
 		else {
