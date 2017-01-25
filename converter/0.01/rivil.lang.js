@@ -193,11 +193,14 @@ global.rivil.lang = ( function ()
 				}
 			}
 			// 同じ文字が3つ以上連続する場合は2つに収める
-			if (/(.)\1{2,}/.test(ret.rivil)) {
-				// console.log(ret.rivil);
-				ret.rivil = ret.rivil.replace(/(.)\1{2,}/g, "$1$1");
-				// console.log(ret.rivil);
-			}
+			// if (/(.)\1{2,}/.test(ret.rivil)) { console.log(ret.rivil); }
+			ret.rivil = ret.rivil.replace(/(.)\1{2,}/g, "$1$1");
+
+			// sh→ŝ、ch→ĉに置き換える
+			// if (/sh/.test(ret.rivil)) { console.log(ret.rivil); }
+			// if (/ch/.test(ret.rivil)) { console.log(ret.rivil); }
+			ret.rivil = ret.rivil.replace(/sh/g, "ŝ");
+			ret.rivil = ret.rivil.replace(/ch/g, "ĉ");
 		}
 		// 英字列以外 → そのまま返す
 		else {
