@@ -11,4 +11,5 @@ function cv() {
     html += wordBlock(word);
   }
   document.getElementById("result1").innerHTML = html;
+  document.getElementById("result2").innerHTML = html;
 }
